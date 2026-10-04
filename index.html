@@ -7,21 +7,21 @@
 <meta name="description" content="An evening on 18 October at the Pushkinskiy Library dedicated to Uzbekistan's history, memory, discussion and connection. Register to take part.">
 <meta property="og:title" content="Remery: Reclaiming Memory">
 <meta property="og:description" content="What if the history you know is only part of the story? Join an evening at the Pushkinskiy Library.">
-<meta name="theme-color" content="#08585D">
+<meta name="theme-color" content="#0F2A5E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;0,800;1,500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --teal-900:#063F43;
-    --teal-700:#08585D;
-    --teal-600:#0B6B70;
-    --paper:#EEF1EC;
+    --blue-900:#091C40;
+    --blue-700:#0F2A5E;
+    --blue-600:#1E4FA3;
+    --paper:#EDEFF4;
     --card:#FBFAF5;
-    --ink:#0E1A1B;
+    --ink:#0B1426;
     --saffron:#EBB83F;
-    --bone:#F1F3EC;
-    --bone-dim:#CFE2E0;
+    --bone:#F2F4FA;
+    --bone-dim:#CCD8F0;
     --catalog-red:#C4463A;
     --error:#B3261E;
     --serif:"Alegreya", Georgia, "Times New Roman", serif;
@@ -31,7 +31,7 @@
   *,*::before,*::after{ box-sizing:border-box; }
   html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
   body{
-    margin:0; background:var(--teal-700); color:var(--ink);
+    margin:0; background:var(--blue-700); color:var(--ink);
     font-family:var(--sans); font-size:1.0625rem; line-height:1.6; -webkit-font-smoothing:antialiased;
   }
   h1,h2,h3,p,ul,ol,dl,dd,dt{ margin:0; }
@@ -43,7 +43,7 @@
   /* ---------- Stage: headline + registration card ---------- */
   .stage{
     position:relative; isolation:isolate; overflow:hidden;
-    background:var(--teal-700); color:var(--bone);
+    background:var(--blue-700); color:var(--bone);
     padding:clamp(24px,4vw,48px) 0 clamp(56px,8vw,112px);
   }
   .stage::before{ /* a faint eight-point-star lattice, the geometry of Samarkand's tilework */
@@ -93,30 +93,30 @@
   }
   .card::after{ /* the punched hole of an index card */
     content:""; position:absolute; left:50%; bottom:24px; width:18px; height:18px; margin-left:-9px;
-    border-radius:50%; background:var(--teal-700); box-shadow:inset 0 2px 3px rgba(0,0,0,.5);
+    border-radius:50%; background:var(--blue-700); box-shadow:inset 0 2px 3px rgba(0,0,0,.5);
   }
   .card h2{ font-family:var(--serif); font-weight:800; font-size:2.7rem; line-height:1.05; }
   .cardline{ height:2px; background:var(--catalog-red); margin:16px 0 4px; }
 
   .field{ margin-top:20px; }
-  .field label{ display:block; font-size:.9rem; font-weight:600; color:rgba(14,26,27,.8); }
+  .field label{ display:block; font-size:.9rem; font-weight:600; color:rgba(11,20,38,.8); }
   .field input[type="text"], .field input[type="email"], .field select, .field textarea{
     width:100%; font:inherit; font-size:1.125rem; color:var(--ink); background:transparent;
-    border:0; border-bottom:1.5px solid rgba(14,26,27,.4); border-radius:0;
+    border:0; border-bottom:1.5px solid rgba(11,20,38,.4); border-radius:0;
     padding:12px 2px 8px; min-height:52px;
   }
-  .field input::placeholder, .field textarea::placeholder{ color:rgba(14,26,27,.62); }
+  .field input::placeholder, .field textarea::placeholder{ color:rgba(11,20,38,.62); }
   .field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible{
-    outline:2px solid var(--teal-600); outline-offset:2px; border-bottom-color:var(--teal-600);
+    outline:2px solid var(--blue-600); outline-offset:2px; border-bottom-color:var(--blue-600);
   }
   .field select{
     appearance:none; -webkit-appearance:none; cursor:pointer; padding-right:28px;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none' stroke='%230E1A1B' stroke-width='1.8'%3E%3Cpath d='M1 1.5l6 6 6-6'/%3E%3C/svg%3E");
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none' stroke='%230B1426' stroke-width='1.8'%3E%3Cpath d='M1 1.5l6 6 6-6'/%3E%3C/svg%3E");
     background-repeat:no-repeat; background-position:right 4px center;
   }
   .field textarea{ /* ruled like the lines on a catalogue card */
     min-height:98px; resize:vertical; line-height:32px; padding-top:0; border-bottom:0;
-    background-image:repeating-linear-gradient(to bottom, transparent 0, transparent 31px, rgba(11,107,112,.32) 31px, rgba(11,107,112,.32) 32px);
+    background-image:repeating-linear-gradient(to bottom, transparent 0, transparent 31px, rgba(30,79,163,.32) 31px, rgba(30,79,163,.32) 32px);
     background-attachment:local;
   }
   .field.invalid input, .field.invalid select{ border-bottom-color:var(--error); }
@@ -129,14 +129,14 @@
   }
   .check input{ position:absolute; opacity:0; width:24px; height:24px; margin:0; }
   .check .box{
-    width:22px; height:22px; margin-top:2px; border:1.5px solid rgba(14,26,27,.55); border-radius:3px; background:#fff;
+    width:22px; height:22px; margin-top:2px; border:1.5px solid rgba(11,20,38,.55); border-radius:3px; background:#fff;
     display:grid; place-items:center;
   }
-  .check input:checked + .box{ background:var(--teal-600); border-color:var(--teal-600); }
+  .check input:checked + .box{ background:var(--blue-600); border-color:var(--blue-600); }
   .check input:checked + .box::after{
     content:""; width:10px; height:5px; border-left:2px solid #fff; border-bottom:2px solid #fff; transform:rotate(-45deg) translate(1px,-1px);
   }
-  .check input:focus-visible + .box{ outline:2px solid var(--teal-600); outline-offset:3px; }
+  .check input:focus-visible + .box{ outline:2px solid var(--blue-600); outline-offset:3px; }
   .field.invalid .box{ border-color:var(--error); }
   .check .text{ font-size:1rem; line-height:1.45; }
 
@@ -160,7 +160,7 @@
   .done-name{ font-family:var(--serif); font-weight:700; font-size:1.8rem; line-height:1.2; margin-top:8px; }
   #reg-done .cardline{ margin-bottom:18px; }
   #reg-done .facts{ margin-top:24px; }
-  #reg-done .facts dt{ color:rgba(14,26,27,.72); }
+  #reg-done .facts dt{ color:rgba(11,20,38,.72); }
   #reg-done .facts dd{ font-size:1.35rem; }
 
   /* ---------- Band: what the project will do ---------- */
@@ -185,19 +185,19 @@
   .steps{ counter-reset:step; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 clamp(32px,6vw,96px); margin-top:28px; }
   .steps li{
     counter-increment:step; display:grid; grid-template-columns:92px minmax(0,1fr); gap:8px;
-    padding:28px 0 30px; border-top:1px solid rgba(14,26,27,.22);
+    padding:28px 0 30px; border-top:1px solid rgba(11,20,38,.22);
   }
   .steps li::before{
-    content:counter(step); font-family:var(--serif); font-weight:800; font-size:4.2rem; line-height:.9; color:var(--teal-600);
+    content:counter(step); font-family:var(--serif); font-weight:800; font-size:4.2rem; line-height:.9; color:var(--blue-600);
   }
   @supports (-webkit-text-stroke:1px #000){
-    .steps li::before{ color:transparent; -webkit-text-stroke:1.5px var(--teal-600); }
+    .steps li::before{ color:transparent; -webkit-text-stroke:1.5px var(--blue-600); }
   }
   .steps h3{ font-family:var(--serif); font-weight:700; font-size:1.5rem; line-height:1.2; margin:0 0 6px; }
-  .steps p{ color:rgba(14,26,27,.78); font-size:1rem; max-width:44ch; }
+  .steps p{ color:rgba(11,20,38,.78); font-size:1rem; max-width:44ch; }
 
   /* ---------- Closing ---------- */
-  .closing{ position:relative; isolation:isolate; overflow:hidden; background:var(--teal-900); color:var(--bone); padding:clamp(64px,10vw,128px) 0 40px; }
+  .closing{ position:relative; isolation:isolate; overflow:hidden; background:var(--blue-900); color:var(--bone); padding:clamp(64px,10vw,128px) 0 40px; }
   .closing::before{
     content:""; position:absolute; inset:0; z-index:-1;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' fill='none' stroke='white' stroke-opacity='0.16' stroke-width='1'%3E%3Cpath d='M50 18L57.65 31.52L72.63 27.37L68.48 42.35L82 50L68.48 57.65L72.63 72.63L57.65 68.48L50 82L42.35 68.48L27.37 72.63L31.52 57.65L18 50L31.52 42.35L27.37 27.37L42.35 31.52Z'/%3E%3Cpath d='M82 50H100M0 50H18M50 0V18M50 82V100'/%3E%3Cpath d='M0 -12L12 0L0 12L-12 0ZM100 -12L112 0L100 12L88 0ZM0 88L12 100L0 112L-12 100ZM100 88L112 100L100 112L88 100Z'/%3E%3C/svg%3E"); background-size:96px 96px;
@@ -207,7 +207,7 @@
   .closing h2{ font-family:var(--serif); font-weight:800; font-size:clamp(2.2rem,5.6vw,4.4rem); line-height:1.02; max-width:18ch; text-wrap:balance; }
   .closing p{ font-family:var(--serif); font-weight:500; font-size:clamp(1.25rem,2.2vw,1.6rem); line-height:1.45; color:var(--bone-dim); max-width:36ch; margin:24px 0 34px; }
   .foot{
-    margin-top:80px; padding-top:24px; border-top:1px solid rgba(241,243,236,.2);
+    margin-top:80px; padding-top:24px; border-top:1px solid rgba(242,244,250,.2);
     display:flex; justify-content:space-between; gap:12px 32px; flex-wrap:wrap; color:var(--bone-dim); font-size:.95rem;
   }
 
